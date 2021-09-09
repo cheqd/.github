@@ -1,0 +1,16 @@
+name: Link Markdown
+
+on:
+  push:
+    branches: [ main ]
+  pull_request:
+    branches: [ main ]
+
+jobs:
+  check_links:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Actions Checkout
+        uses: actions/checkout@v2
+      - name: Check Links
+        uses: gaurav-nelson/github-action-markdown-link-check@v1
