@@ -1,5 +1,5 @@
 {
-    "name": "Cheqd Organization Workflow",
-    "description": "Cheqd Organization CI workflow template.",
+    "name": "Markdown quality control",
+    "description": "Markdown linting and link checking.",
     "iconName": "cheqd"
 }
