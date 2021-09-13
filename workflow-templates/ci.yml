@@ -18,6 +18,7 @@ jobs:
         with: 
           file-extension: '.md'
           check-modified-files-only: 'yes'
+          config-file: '.github/workflows/markdown_links_config.json'
 
   lint:
     name: Lint
