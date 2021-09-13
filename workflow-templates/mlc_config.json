@@ -2,9 +2,7 @@
     "ignorePatterns": [
       {
         "pattern": "^https://github.com/cheqd/cheqd-tooling"
-      },
-      {
-        "pattern": "^https://docs.starport.network/intro/install.html"
       }
-    ]
+    ],
+    "aliveStatusCodes": [200, 206, 999]
 }
