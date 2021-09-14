@@ -1,10 +1,6 @@
 name: Link Markdown
 
-on:
-  push:
-    branches: [ main ]
-  pull_request:
-    branches: [ main ]
+on: push
 
 jobs:
   check_links:
@@ -22,15 +18,16 @@ jobs:
           config-file: '.github/workflows/mlc_config.json'
           folder-path: "."
 
-  lint:
-    name: Lint
+  lint-check:
+    name: Lint Markdown Check
     runs-on: ubuntu-latest
     steps:
-      - uses: actions/checkout@v2
-      - name: golangci-lint
-        uses: golangci/golangci-lint-action@v2
-        with:
-          version: v1.40
-          args: --timeout 5m0s
-          only-new-issues: true
+    - name: Check Out Code
+      uses: actions/checkout@v2
+    - name: Lint Changelog Files
+      uses: avto-dev/markdown-lint@v1
+      with:
+        rules: '/lint/rules/changelog.js'
+        config: '/lint/config/changelog.yml'
+        args: '.'
   

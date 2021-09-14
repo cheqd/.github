@@ -3,7 +3,6 @@
     "description": "Markdown linting and link checking.",
     "iconName": "cheqd",
     "categories": [
-        "Go",
         "Markdown"
     ]
 }
