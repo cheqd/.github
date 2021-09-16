@@ -19,15 +19,14 @@ jobs:
           folder-path: "."
 
   lint-check:
-    name: Lint Markdown Check
+    name: Markdown - Linting Check
     runs-on: ubuntu-latest
     steps:
-    - name: Check Out Code
+    - name: Checkout code
       uses: actions/checkout@v2
-    - name: Lint Changelog Files
+    - name: Check if Markdown is formatted correctly
       uses: avto-dev/markdown-lint@v1
       with:
-        rules: '/lint/rules/changelog.js'
-        config: '/lint/config/changelog.yml'
         args: '.'
+        fix: true
   
