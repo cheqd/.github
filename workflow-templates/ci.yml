@@ -10,7 +10,7 @@ jobs:
       - name: Checkout code
         uses: actions/checkout@v2
         with: 
-          token: '${{ secrets.GH_PAT }}'
+          github_token: ${{ secrets.GH_TOKEN }}
           persist-credentials: false
       - name: Check if Markdown links are valid
         uses: gaurav-nelson/github-action-markdown-link-check@v1
