@@ -24,7 +24,6 @@ jobs:
     - name: Check if Markdown is formatted correctly
       uses: avto-dev/markdown-lint@v1
       with:
-        rules: '.github/workflows/markdown-ci/markdown-rules.js'
         config: '.github/workflows/markdown-ci/markdown-config.yml'
         args: '.'
         fix: true
