@@ -1,33 +1,32 @@
-name: Link Markdown
+name: Markdown quality control checks
 
 on: [push, pull_request]
 
 jobs:
   check_links:
-    name: Links
+    name: Markdown - Link Check
     runs-on: ubuntu-latest
     steps:
-      - name: Actions Checkout
+      - name: Checkout code
         uses: actions/checkout@v2
         with: 
           token: '${{ secrets.GH_PAT }}'
           persist-credentials: false
-      - name: Check Links
+      - name: Check if Markdown links are valid
         uses: gaurav-nelson/github-action-markdown-link-check@v1
         with: 
           config-file: '.github/workflows/mlc_config.json'
           folder-path: "."
 
   lint-check:
-    name: Lint Markdown Check
+    name: Markdown - Linting Check
     runs-on: ubuntu-latest
     steps:
-    - name: Check Out Code
+    - name: Checkout code
       uses: actions/checkout@v2
-    - name: Lint Changelog Files
+    - name: Check if Markdown is formatted correctly
       uses: avto-dev/markdown-lint@v1
-      with:
-        rules: '/lint/rules/changelog.js'
-        config: '/lint/config/changelog.yml'
-        args: '.'
-  
+      fix:
+        description: 'Fix basic Markdown errors'
+        required: true
+        default: 'true'
