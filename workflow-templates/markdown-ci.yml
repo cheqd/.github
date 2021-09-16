@@ -1,4 +1,4 @@
-name: Markdown quality control checks
+name: Markdown quality control
 
 on: [push]
 
@@ -9,13 +9,10 @@ jobs:
     steps:
       - name: Checkout code
         uses: actions/checkout@v2
-        with: 
-          github_token: ${{ secrets.GH_TOKEN }}
-          persist-credentials: false
       - name: Check if Markdown links are valid
         uses: gaurav-nelson/github-action-markdown-link-check@v1
         with: 
-          config-file: '.github/workflows/mlc_config.json'
+          config-file: '.github/workflows/markdown-ci/mlc_config.json'
           folder-path: "."
 
   lint-check:
@@ -27,7 +24,7 @@ jobs:
     - name: Check if Markdown is formatted correctly
       uses: avto-dev/markdown-lint@v1
       with:
-        rules: '.github/workflows/markdown-rules/changelog.js'
-        config: '.github/workflows/markdown-rules/changelog.yml'
+        rules: '.github/workflows/markdown-ci/markdown-rules.js'
+        config: '.github/workflows/markdown-ci/markdown-config.yml'
         args: '.'
         fix: true
