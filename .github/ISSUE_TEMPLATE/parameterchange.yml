@@ -9,7 +9,9 @@ body:
   id: summary
   attributes:
     label: Summary
-    description: A short (~150 word) description of the Proposal you want to make. Provide a simplified and layman-accessible explanation of the Proposal in plain English to have the best chance of gaining community interest and having it accepted.
+    description: A short (~150 word) description of the Proposal you want to make. 
+
+Provide a simplified and layman-accessible explanation of the Proposal in plain English to have the best chance of gaining community interest and having it accepted.
   validations:
     required: true
 - type: dropdown
