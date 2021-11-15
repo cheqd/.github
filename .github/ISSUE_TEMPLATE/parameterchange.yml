@@ -5,7 +5,7 @@ labels: ["Parameter Change", "Proposal"]
 assignees:
   - Alex Tweeddale
 body:
-- type: input
+- type: textarea
   id: summary
   attributes:
     label: Summary
