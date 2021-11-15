@@ -39,15 +39,6 @@ body:
     value: 
   validations:
     required: true
-- type: input
-  id: new
-  attributes:
-    label: New Parameter Value
-    description: What is the parameter value that you want to change to?
-    placeholder: $10,000 CHEQ
-    value: 
-  validations:
-    required: true
 - type: checkboxes
   id: terms
   attributes:
