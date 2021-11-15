@@ -26,14 +26,37 @@ body:
       value: "A bug happened!"
     validations:
       required: true
-  - type: dropdown
-    id: version
+      body:
+- type: textarea
+  id: repro
+  attributes:
+    label: Reproduction steps
+    description: "How do you trigger this bug? Please walk us through it step by step."
+    value: |
+      1.
+      2.
+      3.
+      ...
+    render: bash
+  validations:
+    required: true
+    body:
+  - type: input
+    id: prevalence
     attributes:
-      label: Version
-      description: What version of our software are you running?
+      label: Bug prevalence
+      description: "How often do you or others encounter this bug?"
+      placeholder: "Whenever I visit the user account page (1-2 times a week)"
+    validations:
+      required: true
+  - type: dropdown
+    id: environment
+    attributes:
+      label: Environment
+      description: What environment was this bug first noticed on?
       options:
-        - 1.0.2 (Default)
-        - 1.0.3 (Edge)
+        - testnet
+        - mainnet
     validations:
       required: true
   - type: dropdown
