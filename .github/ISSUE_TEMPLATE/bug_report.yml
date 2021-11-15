@@ -68,6 +68,7 @@ body:
         - Chrome
         - Safari
         - Microsoft Edge
+        - Brave
   - type: textarea
     id: logs
     attributes:
