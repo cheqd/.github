@@ -6,7 +6,7 @@ assignees:
   - Alex Tweeddale
 body:
   - type: dropdown
-    id: Parameter_Name
+    id: parameter-name
     attributes:
       label: Parameter Name
       description: Please select the parameter you wish to change?
@@ -29,7 +29,7 @@ body:
      validations:
        required: true  
   - type: input
-    id: Previous
+    id: previous
     attributes:
       label: Current Parameter Value
       description: What is the current parameter value that you want to change?
@@ -38,7 +38,7 @@ body:
     validations:
       required: true
   - type: input
-    id: New
+    id: new
     attributes:
       label: New Parameter Value
       description: What is the parameter value that you want to change to?
