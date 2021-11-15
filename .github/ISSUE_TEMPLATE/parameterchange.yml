@@ -5,11 +5,18 @@ labels: ["Parameter Change", "Proposal"]
 assignees:
   - Alex Tweeddale
 body:
+- type: input
+  id: summary
+  attributes:
+    Label: Summary
+    desription: A short (~150 word) description of the Proposal you want to make. Provide a simplified and layman-accessible explanation of the Proposal in plain English to have the best chance of gaining community interest and having it accepted.
+  validations:
+    required: true
 - type: dropdown
   id: parameter-name
   attributes:
     label: Parameter Name
-    description: Please select the parameter you wish to change?
+    description: Please select the parameter you wish to change
     options: 
     - Minimum Deposit
     - Max Deposit Period
@@ -50,7 +57,7 @@ body:
   id: rationale
   attributes:
     label: Rationale
-    description: Please explain why you would like to make this parameter change and how it would benefit the cheqd community.
+    description: Please explain in full why you would like to make this parameter change and how it would benefit the cheqd community.
     render: shell
 - type: checkboxes
   id: terms
