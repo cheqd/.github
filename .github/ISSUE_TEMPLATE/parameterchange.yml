@@ -26,8 +26,8 @@ body:
       - Community tax percentage
       - Base Proposal reward
       - Bonus Proposal reward
-    validations:
-      required: true  
+   validations:
+     required: true  
 - type: input
   id: Previous
   attributes:
