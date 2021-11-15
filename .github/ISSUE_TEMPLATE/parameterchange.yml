@@ -5,58 +5,58 @@ labels: ["Parameter Change", "Proposal"]
 assignees:
   - Alex Tweeddale
 body:
-  - type: dropdown
-    id: Parameter_Name
-    attributes:
-      label: Parameter Name
-      description: Please select the parameter you wish to change?
-      options: 
-        - Minimum Deposit
-				- Max Deposit Period
-        - Voting Period
-        - Inflation rate
-        - Inflation max
-        - Inflation min
-        - Inflation rate change
-        - Bonded token goal
-        - Quorum
-        - Threshold
-        - Veto
-        - Unbonding Period
-        - Community tax percentage
-        - Base Proposal reward
-        - Bonus Proposal reward
+- type: dropdown
+  id: Parameter_Name
+  attributes:
+    label: Parameter Name
+    description: Please select the parameter you wish to change?
+    options:
+      - Minimum Deposit
+      - Max Deposit Period
+      - Voting Period
+      - Inflation rate
+      - Inflation max
+      - Inflation min
+      - Inflation rate change
+      - Bonded token goal
+      - Quorum
+      - Threshold
+      - Veto
+      - Unbonding Period
+      - Community tax percentage
+      - Base Proposal reward
+      - Bonus Proposal reward
     validations:
-      required: true
-  - type: input
-    id: Previous
-    attributes:
-      label: Current Parameter Value
-      description: What is the current parameter value that you want to change?
-      placeholder: $8000 CHEQ
-      value: 
-    validations:
-      required: true
-  - type: input
-    id: New
-    attributes:
-      label: New Parameter Value
-      description: What is the parameter value that you want to change to?
-      placeholder: $10,000 CHEQ
-      value: 
-    validations:
-      required: true
-  - type: textarea
-    id: rationale
-    attributes:
-      label: Rationale
-      description: Please explain why you would like to make this parameter change and how it would benefit the cheqd community.
-      render: shell
-  - type: checkboxes
-    id: terms
-    attributes:
-      label: Code of Conduct
-      description: By submitting this issue, you agree to follow our [Code of Conduct](https://github.com/cheqd/.github/blob/main/CODE_OF_CONDUCT.md)
-      options:
-        - label: I agree to follow this project's Code of Conduct
-          required: true
+      required: true  
+- type: input
+  id: Previous
+  attributes:
+    label: Current Parameter Value
+    description: What is the current parameter value that you want to change?
+    placeholder: $8000 CHEQ
+    value: 
+  validations:
+    required: true
+- type: input
+  id: New
+  attributes:
+    label: New Parameter Value
+    description: What is the parameter value that you want to change to?
+    placeholder: $10,000 CHEQ
+    value: 
+  validations:
+    required: true
+- type: textarea
+  id: rationale
+  attributes:
+    label: Rationale
+    description: Please explain why you would like to make this parameter change and how it would benefit the cheqd community.
+    render: shell
+- type: checkboxes
+  id: terms
+  attributes:
+    label: Code of Conduct
+    description: By submitting this issue, you agree to follow our [Code of Conduct](https://github.com/cheqd/.github/blob/main/CODE_OF_CONDUCT.md)
+    options:
+      - label: I agree to follow this project's Code of Conduct
+        required: true
