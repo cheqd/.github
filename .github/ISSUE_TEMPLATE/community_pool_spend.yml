@@ -24,7 +24,7 @@ body:
 - type: input
   id: link
   attributes:
-    label: Proposed Community Spend
+    label: Proposed Recipient
     description: Please link to the initiatve, organisation, or other entity which it is proposed to donate the Community Pool to.
     placeholder: (Insert link)
     value: 
