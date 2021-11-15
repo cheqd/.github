@@ -8,10 +8,11 @@ body:
   - type: dropdown
     id: Parameter_Name
     attributes:
-    description: Please select the parameter you wish to change?
-      Options: 
+      label: Parameter Name
+      description: Please select the parameter you wish to change?
+      options: 
         - Minimum Deposit
-        - Max Deposit Period
+				- Max Deposit Period
         - Voting Period
         - Inflation rate
         - Inflation max
