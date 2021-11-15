@@ -40,7 +40,11 @@ body:
   validations:
     required: true
 - type: markdown
-  value: "At cheqd, we want to make sure that the community pool is spent well, and the donation is well thought through. We would like there to be many positive consequences of the spend, to benefit an alturistic cause, such as the environment, humanitarian work or low income countries." 
+  value: "## Note"
+- type: markdown
+  attributes:
+    value: |
+      "At cheqd, we want to make sure that the community pool is spent well, and the donation is well thought through. We would like there to be many positive consequences of the spend, to benefit an alturistic cause, such as the environment, humanitarian work or low income countries." 
 - type: textarea
   id: positive
   attributes:
