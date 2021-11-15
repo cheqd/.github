@@ -9,7 +9,7 @@ body:
     id: Parameter_Name
     attributes:
     description: Please select the parameter you wish to change
-      label: Parameter Name
+      label: Parameter_Name
       Options: 
         - Minimum Deposit
         - Max Deposit Period
@@ -31,7 +31,7 @@ body:
   - type: input
     id: Previous
     attributes:
-      label: Current Parameter Value
+      label: Current_Parameter_Value
       description: What is the current parameter value that you want to change?
       placeholder: $8000 CHEQ
       value: 
@@ -40,7 +40,7 @@ body:
   - type: input
     id: New
     attributes:
-      label: New Parameter Value
+      label: New_Parameter_Value
       description: What is the parameter value that you want to change to?
       placeholder: $10,000 CHEQ
       value: 
