@@ -31,7 +31,7 @@ body:
     attributes:
       label: Link for context
       description: Please provide a link of where any other projects (ideally on Cosmos) that use this feature, for better context.
-      placeholder: https://github.com/osmosis-labs/osmosis
+      placeholder: https://github.com/cheqd/cheqd-node
     validations:
       required: false
   - type: textarea
