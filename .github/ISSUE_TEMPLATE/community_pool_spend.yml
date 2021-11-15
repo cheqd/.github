@@ -39,6 +39,29 @@ body:
     value: 
   validations:
     required: true
+- type: markdown
+  value: At cheqd, we want to make sure that the community pool is spent well, and the donation is well thought through. We would like there to be many positive consequences of the spend, to benefit an alturistic cause, such as the environment, humanitarian work or low income countries. 
+- type: textarea
+  id: positive
+  attributes:
+    label: Positive Consequences
+    description: This section should describe the resulting and predicted positive consequences, after applying the decision.
+    placeholder: (Insert positive consequences here)
+    render: shell
+- type: textarea
+  id: negative
+  attributes:
+    label: Negative Consequences
+    description: This section should describe the resulting and predicted negative consequences, after applying the decision.
+    placeholder: (Insert negative consequences here)
+    render: shell
+- type: textarea
+  id: neutral
+  attributes:
+    label: Neutral Consequences
+    description: This section should describe the resulting and predicted neutral consequences, after applying the decision.
+    placeholder: {Insert neutral consequences here}
+    render: shell
 - type: checkboxes
   id: terms
   attributes:
