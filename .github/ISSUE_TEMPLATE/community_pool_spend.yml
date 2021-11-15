@@ -26,7 +26,7 @@ body:
   attributes:
     label: Proposed Community Spend
     description: Please link to the initiatve, organisation, or other entity which it is proposed to donate the Community Pool to.
-    placeholder: [insert link]
+    placeholder: (Insert link)
     value: 
   validations:
     required: false
