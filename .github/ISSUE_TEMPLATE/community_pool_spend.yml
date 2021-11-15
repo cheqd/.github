@@ -45,7 +45,7 @@ body:
 - type: markdown
   attributes:
     value: |
-      "At cheqd, we would like to ensure that there to be many positive consequences of the spend, to benefit an alturistic cause, such as the environment, humanitarian work or low income countries." 
+      At cheqd, we would like to ensure that there to be many positive consequences of the spend, to benefit an alturistic cause, such as the environment, humanitarian work or low income countries.
 - type: textarea
   id: positive
   attributes:
