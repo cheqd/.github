@@ -40,7 +40,8 @@ body:
   validations:
     required: true
 - type: markdown
-  value: "## Note"
+  attributes:
+    value: "## Note"
 - type: markdown
   attributes:
     value: |
