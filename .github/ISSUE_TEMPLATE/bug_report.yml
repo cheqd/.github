@@ -40,7 +40,6 @@ body:
       render: bash
     validations:
       required: true
-    body:
   - type: input
     id: prevalence
     attributes:
