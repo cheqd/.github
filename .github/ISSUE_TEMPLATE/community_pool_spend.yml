@@ -16,7 +16,7 @@ body:
 - type: textarea
   id: rationale
   attributes:
-    label: Summary
+    label: Description
     description: A longer <500 description of what you want the community pool to be spent on, making direct references to where you want to make changes from, using links.
     placeholder: I want to donate the community pool to X initiative because they support X.
   validations:
