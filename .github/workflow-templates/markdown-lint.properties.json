@@ -1,6 +1,7 @@
 {
     "name": "Markdown quality control",
     "description": "Markdown linting and link checking",
+    "iconName": "markdown-icon",
     "categories": [
         "Markdown"
     ]

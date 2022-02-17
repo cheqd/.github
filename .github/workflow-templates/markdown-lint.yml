@@ -25,11 +25,11 @@ jobs:
       - name: Check if Markdown links are valid
         uses: gaurav-nelson/github-action-markdown-link-check@v1
         with: 
-          config-file: '.github/workflows/linters/markdown/mlc_config.json'
+          config-file: '.github/linters/markdown/mlc_config.json'
           folder-path: "."
 
   lint-check:
-    name: Markdown - Linting Check
+    name: Markdown - Linting
     runs-on: ubuntu-latest
     steps:
     - name: Checkout code
@@ -37,6 +37,6 @@ jobs:
     - name: Check if Markdown is formatted correctly
       uses: avto-dev/markdown-lint@v1
       with:
-        config: '.github/workflows/linters/markdown/markdown-lint-config.yml'
+        config: '.github/linters/markdown/markdown-lint-config.yml'
         args: '.'
         fix: true
