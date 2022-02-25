@@ -1,6 +1,6 @@
-# Hi, from the cheqd team 👋
+# Hello world, from the cheqd team 👋
 
-🆔 [cheqd](https://www.cheqd.io) is building secure and private decentralised identity  systems on the [Cosmos blockchain](https://cosmos.network) 💫 framework
+[cheqd](https://www.cheqd.io) is building secure 🔐 and private 🤫 self-sovereign identity systems on [Cosmos](https://cosmos.network) 💫 which allows anyone to add viable commercial models to decentralised digital 🆔
 
 ## 🙋 Find us elsewhere
 
