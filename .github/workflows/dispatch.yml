@@ -9,5 +9,4 @@ jobs:
 
   call-lint:
     name: "Lint"
-    uses: cheqd/cheqd-node/.github/workflows/lint.yml@main
-
+    uses: .github/workflows/lint.yml@main
