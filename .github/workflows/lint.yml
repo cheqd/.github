@@ -51,11 +51,16 @@ jobs:
         MULTI_STATUS: true
 
         VALIDATE_BASH: true
+        VALIDATE_DOCKERFILE_HADOLINT: true
         VALIDATE_GITHUB_ACTIONS: true
+        VALIDATE_JAVASCRIPT_ES: true
         VALIDATE_JSON: true
         VALIDATE_MARKDOWN: true
         VALIDATE_OPENAPI: true
-        # VALIDATE_PROTOBUF: true
         VALIDATE_PYTHON_PYLINT: true
+        VALIDATE_TERRAFORM_TFLINT: true
+        VALIDATE_TERRAGRUNT: true
+        VALIDATE_TSX: true
+        VALIDATE_TYPESCRIPT_ES: true
         VALIDATE_XML: true
         VALIDATE_YAML: true
