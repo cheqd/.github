@@ -1,6 +1,6 @@
-name: PR Title Check
+name: "PR Title Check"
 on:
-  pull_request:
+  pull_request_target:
     branches:
       - main
       - master
