@@ -31,6 +31,7 @@ jobs:
             core
             tooling
             docker
+            workflows
 
           # Configure that a scope must always be provided.
           requireScope: false
@@ -41,8 +42,8 @@ jobs:
           #   release
           
           # Configure additional validation for the subject based on a regex.
-          # This example ensures the subject doesn't start with an uppercase character.
-          subjectPattern: ^(?![A-Z]).+$
+          # This ensure subject doesn't start with a lowercase character
+          subjectPattern: ^(?![a-z]).+$
           
           # If `subjectPattern` is configured, you can use this property to override
           # the default error message that is shown when the pattern doesn't match.
@@ -50,8 +51,7 @@ jobs:
           subjectPatternError: |
             The subject "{subject}" found in the pull request title "{title}"
             didn't match the configured pattern. Please ensure that the subject
-            doesn't start with an uppercase character.
-          # If you use GitHub Enterprise, you can set this to the URL of your server
+            doesn't start with an lowecase character.
 
           # If the PR contains one of these labels, the validation is skipped.
           # Multiple labels can be separated by newlines.
@@ -60,6 +60,7 @@ jobs:
           ignoreLabels: |
             bot
             ignore-semantic-pull-request
+          
           # If you're using a format for the PR title that differs from the traditional Conventional
           # Commits spec, you can use these options to customize the parsing of the type, scope and
           # subject. The `headerPattern` should contain a regex where the capturing groups in parentheses
