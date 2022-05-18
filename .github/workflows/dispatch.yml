@@ -1,5 +1,11 @@
 name: "Workflow Dispatch"
-on: push
+on:
+  push:
+  pull_request_target:
+    branches:
+      - main
+      - master
+      - cheqd
 concurrency: 
   group: ${{ github.workflow }}-${{ github.ref }}
   cancel-in-progress: true
