@@ -77,6 +77,7 @@ jobs:
         VALIDATE_JAVASCRIPT_ES: true
         VALIDATE_JSON: true
         VALIDATE_MARKDOWN: true
+        MARKDOWN_CONFIG_FILE: '.github/linters/.markdown-lint.yml'
         VALIDATE_OPENAPI: true
         VALIDATE_PYTHON_PYLINT: true
         VALIDATE_TERRAFORM_TFLINT: true
