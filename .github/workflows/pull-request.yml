@@ -1,4 +1,4 @@
-name: PR Title Check
+name: "PR Title Check"
 on:
   pull_request_target:
     branches:
@@ -15,6 +15,7 @@ on:
 
 jobs:
   lint-pr:
+    name: "PR format check"
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v3
