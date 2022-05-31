@@ -3,7 +3,7 @@ on:
   pull_request_target:
     branches:
       - main
-      - 'release/**'
+      - develop
     types:
       - opened
       - reopened
