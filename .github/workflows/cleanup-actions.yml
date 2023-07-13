@@ -3,21 +3,21 @@ on:
   workflow_dispatch:
     inputs:
       days:
-        description: 'Retain days'
+        description: "Retain days"
         required: true
         type: string
         default: "30"
       minimum_runs:
-        description: 'Minimum runs to keep for each workflow'
+        description: "Minimum runs to keep for each workflow"
         required: true
         type: string
         default: "0"
       delete_workflow_pattern:
-        description: 'Name/filename of workflow. Default is all.'
+        description: "Name/filename of workflow. Default is all."
         required: false
         type: string
       delete_workflow_by_state_pattern:
-        description: 'Remove workflow by state: active, deleted, disabled_fork, disabled_inactivity, disabled_manually'
+        description: "Remove workflow by state: active, deleted, disabled_fork, disabled_inactivity, disabled_manually"
         required: true
         default: All
         type: choice
