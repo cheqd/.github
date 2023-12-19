@@ -10,10 +10,13 @@
             "replacement": ""
         }
     ],
-    "ignorePatterns": [
-        {
-          "pattern": "^https://resolver.cheqd.net/"
-        }
-    ],
-    "retryOn429": true
+	"ignorePatterns": [
+		{
+			"pattern": "^https://resolver.cheqd.net/"
+		},
+		{
+			"pattern": "^https://twitter.com/"
+		}
+	],
+	"retryOn429": true
 }
